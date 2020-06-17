@@ -10,8 +10,8 @@
 
 
 <?php
-$comp1 = 'C50E41160302E0F5D6D59F1AA3925C45';
-$comp2 = '00000000000000000000000000000000';
+$comp1 = env('CMP1');
+$comp2 = env('CMP2');
 $data = [
   'order' => $el->ORDER,
   'amount' => $el->AMOUNT,
