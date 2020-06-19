@@ -35,8 +35,8 @@ $string .= "-";
 }
 $key = strtoupper(implode(unpack("H32",pack("H32",$comp1) ^ pack("H32",$comp2))));
 $data['p_sign'] = strtoupper(hash_hmac('sha1', $string, pack('H*', $key)));
-$url = "https://test.3ds.payment.ru/cgi-bin/check_operation/ecomm_check";
-$host = "test.3ds.payment.ru";
+$url = "https://3ds.payment.ru/cgi-bin/check_operation/ecomm_check";
+$host = "3ds.payment.ru";
 $headers = [
 "Host: " . $host,
 "User-Agent: " . $_SERVER['HTTP_USER_AGENT'],
