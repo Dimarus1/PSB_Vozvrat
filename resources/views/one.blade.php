@@ -57,6 +57,9 @@
 				<label for="AMOUNT"></label>
 				<input id="AMOUNT" type="AMOUNT" name="AMOUNT" class="form-control-lg" placeholder="цена 10000" min="1" required>
 	</div>
+    <div class="form-group">				
+				<button class="btn btn-success" type="submit">Отправить</button>
+				</div>
  </form> 
 </div> </br> </br> </br>
 
