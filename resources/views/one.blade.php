@@ -43,9 +43,21 @@
 <a href="{{ route('Bank', $data->id) }}"><button class="btn btn-success">ПРОВЕРИТЬ в банке
 </button></a></br> </br> </br>
 
+<!--
 <div id="BTNS" class="BTNS">
 <a href="{{ route('Ref', $data->id) }}" onClick="return window.confirm('СДЕЛАТЬ ВОЗВРАТ?')"><button class="btn btn-danger">ВОЗВРАТ ДЕНЕГ
 </button></a> 
+</div> </br> </br> </br>
+//**/ -->
+<div id="BTNS" class="BTNS">
+<form action="{{ route('OneDatal', $data->id) }}" method="post">
+@csrf
+
+     <div class="form-group">
+				<label for="AMOUNT"></label>
+				<input id="AMOUNT" type="AMOUNT" name="AMOUNT" class="form-control-lg" placeholder="цена 10000" min="1" required>
+	</div>
+ </form> 
 </div> </br> </br> </br>
 
 <a href="javascript:void(0)" onclick="showHide('BTNS')">Открыть элемент</a><br/><br/>
