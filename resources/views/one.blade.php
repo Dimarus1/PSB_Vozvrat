@@ -50,7 +50,7 @@
 </div> </br> </br> </br>
 //**/ -->
 <div id="BTNS" class="BTNS">
-<form action="{{ route('OneDatal', $data->id) }}" method="post">
+<form action="{{ route('OneDatal', $el->id) }}" method="post">
 @csrf
 
      <div class="form-group">
