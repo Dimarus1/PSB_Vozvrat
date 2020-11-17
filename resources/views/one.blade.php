@@ -40,6 +40,9 @@
 <p>CHANNEL------- {{ $data->CHANNEL }}</p>
 <p>ADDINFO------- {{ $data->ADDINFO }}</p>
 <p><small>{{ $data->created_at }}</small></p>
+<p><small>Сумма возврата GET ----------{{ $_GET["AMOUNT"] }}</small></p>
+
+
 <a href="{{ route('Bank', $data->id) }}"><button class="btn btn-success">ПРОВЕРИТЬ в банке
 </button></a></br> </br> </br>
 
@@ -55,7 +58,7 @@
 
      <div class="form-group">
 				<label for="AMOUNT"></label>
-				<input id="AMOUNT" type="AMOUNT" name="AMOUNT" class="form-control-lg" placeholder="цена 10000" min="1" required>
+				<input id="AMOUNT" type="AMOUNT" name="AMOUNT" class="form-control-lg" placeholder="возврат 10000" min="1" required>
 	</div>
     <div class="form-group">				
 				<button class="btn btn-success" type="submit">Отправить</button>
