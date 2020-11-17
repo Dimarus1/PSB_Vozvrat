@@ -41,10 +41,6 @@
 <p>ADDINFO------- {{ $data->ADDINFO }}</p>
 <p><small>{{ $data->created_at }}</small></p>
 
-<?php
-echo('<p><small>Сумма возврата GET ----------'. htmlspecialchars($_GET["AMOUNT"]) .'</small></p>')
-?>
-
 <a href="{{ route('Bank', $data->id) }}"><button class="btn btn-success">ПРОВЕРИТЬ в банке
 </button></a></br> </br> </br>
 
@@ -55,7 +51,7 @@ echo('<p><small>Сумма возврата GET ----------'. htmlspecialchars($_
 </div> </br> </br> </br>
 //**/ -->
 <div id="BTNS" class="BTNS">
-<form action="{{ route('OneDatal', $data->id) }}" method="GET">
+<form action="{{ route('Ref', $data->id) }}" method="GET">
 @csrf
 
      <div class="form-group">
